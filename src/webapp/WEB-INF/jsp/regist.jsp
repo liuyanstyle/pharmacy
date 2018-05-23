@@ -13,7 +13,7 @@
 		<title>注册</title>
 	</head>
 	<body>
-		<form action="/pharmacy/user/addUser" method="post" >
+		<form action"/pharmacy/user/addUser" method="post" >
 		<table align="center">
 			<tr>
 				<td style="float: right;"><font color="red">*</font>用户名:</td>
