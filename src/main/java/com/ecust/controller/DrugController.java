@@ -22,22 +22,13 @@ public class DrugController {
     @Autowired
     DrugstoreService drugstoreService;
 
-    /*test*/
-    @RequestMapping("listDrug")
-    public ModelAndView listDrug(){
-        ModelAndView mav = new ModelAndView();
-        List<Drug> cs= drugService.searchName("片");
-        mav.addObject("cs", cs);
-        mav.setViewName("listDrug");
-        return mav;
-    }
     /*show all drug*/
-    @RequestMapping("listDrug1")
+    @RequestMapping("listDrug")
     public ModelAndView listDrug1(){
         ModelAndView mav = new ModelAndView();
         List<Drug> cs= drugService.select();
         mav.addObject("cs", cs);
-        mav.setViewName("listDrug1");
+        mav.setViewName("listDrug2");
         return mav;
     }
 

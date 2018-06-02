@@ -31,13 +31,13 @@ public class OrderController {
     OrderItemService orderItemService;
 
     @RequestMapping("orderItemAdd")
-    public ModelAndView orderItemAdd(int id, HttpSession httpSession){
+    public ModelAndView orderItemAdd(int pid,int num, HttpSession httpSession){
 
         ModelAndView mav = new ModelAndView();
         OrderItem oi=new OrderItem();
 
-        oi.setNum(1);
-        Drug drug=drugService.get(id);
+        oi.setNum(num);
+        Drug drug=drugService.get(pid);
         oi.setDid(drug.id);
         oi.setDrug(drug);
 

@@ -43,7 +43,7 @@
 
         <ul class="dropdown-menu" role="menu">
             <li>
-                <a href="/pharmacy/drug/listDrug1">药品修改</a>
+                <a href="/pharmacy/drug/listDrug">药品修改</a>
             </li>
             <li role="presentation">
                 <a href="#"></a>

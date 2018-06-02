@@ -25,4 +25,16 @@
         select * from drug where id=#{id}
     </select>
 
+    <insert id="add" parameterType="Drug">
+        insert into drug where name=#{name} and price=#{price}
+    </insert>
+
+    <delete id="delete" parameterType="Drug">
+        delete from drug where id=#{id}
+    </delete>
+
+    <update id="edit" parameterMap="Drug">
+        update drug set name=#{name} and price=#{price} where id=#{id}
+    </update>
+
 </mapper>
