@@ -10,5 +10,6 @@ public interface DrugService {
     List<Drug> searchName(String name);
     Drug get(int id);
     List<Drug> showDrug();
+    List<Drug> select();
 
 }

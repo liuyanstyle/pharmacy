@@ -35,6 +35,11 @@ public class DrugServiceImpl  implements DrugService{
         return DrugMapper.showDrug();
     }
 
+    @Override
+    public List<Drug> select() {
+        return DrugMapper.select();
+    }
+
 
 
 }

@@ -14,5 +14,7 @@ public interface DrugMapper {
 
     public List<Drug> showDrug();
 
+    public List<Drug>  select();
+
 
 }

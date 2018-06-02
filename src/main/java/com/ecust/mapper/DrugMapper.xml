@@ -17,6 +17,10 @@
         select * from   drug  order by rand() limit 5
     </select>
 
+    <select id="select" resultType="Drug">
+        select * from   drug
+    </select>
+
     <select id ="get" resultType="Drug">
         select * from drug where id=#{id}
     </select>

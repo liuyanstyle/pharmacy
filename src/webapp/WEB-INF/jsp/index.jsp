@@ -12,6 +12,7 @@
     <li class="active">寻医问药网</li>
     <li><a href="login">登录</a></li>
     <li><a href="regist">注册</a></li>
+    <li><a href="admin">管理员</a></li>
     <li></li><c:if test="${!empty user}">当前用户: ${user.name}</c:if></li>
 
         <form action="drug/search" method="post">

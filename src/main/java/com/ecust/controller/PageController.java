@@ -41,4 +41,12 @@ public class PageController {
 
     }
 
+    @RequestMapping("admin")
+    public ModelAndView admin() {
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("loginAdmin");
+        return mav;
+
+    }
+
 }

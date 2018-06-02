@@ -17,6 +17,8 @@ import javax.servlet.http.HttpSession;
 public class UserController {
     @Autowired
     UserService userService;
+	@Autowired
+	AdminService adminService;
 
 
     @RequestMapping("listUser")
@@ -45,6 +47,23 @@ public class UserController {
     	}
     	
     }
+
+	@RequestMapping("loginAdmin")
+	public ModelAndView loginAdmin(Admin admin) {
+		ModelAndView mav = new ModelAndView();
+		Admin cs=adminService.login(admin);
+		if(cs==null) {
+			mav.setViewName("erro");
+			return mav;
+		}
+		else
+		{
+			mav.addObject("cs",cs);
+			mav.setViewName("admin");
+			return mav;
+		}
+
+	}
     
     @RequestMapping("addUser")
 	public ModelAndView addUser(User user){
