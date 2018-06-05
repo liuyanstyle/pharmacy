@@ -16,7 +16,7 @@
     <li></li><c:if test="${!empty user}">当前用户: ${user.name}</c:if></li>
 
         <form action="drug/search" method="post">
-            <select name="searchName" >
+            <select name="searchName">
                 <option value="drug">药品</option>
                 <option value="drugstore">药店</option>
                 <option value="drugEffect">药品功效</option>
@@ -28,7 +28,7 @@
 
 <h>药品推荐</h>
 <div style="text-align:center">
-<table class="table">
+<table class="table table-striped table-bordered table-hover  table-condensed">
     <tr>
         <td>编号</td>
         <td>药品名</td>

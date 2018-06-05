@@ -19,7 +19,7 @@
     }
 
 </style>
-<h1>超市管理系统<small>(管理用户:${admin.name})</small></h1>
+<h1>医药管理系统<small>(管理用户:${admin.name})</small></h1>
 <div style="text-align:center">
 
     <div class="btn-group">

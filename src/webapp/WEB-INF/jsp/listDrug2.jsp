@@ -31,7 +31,7 @@
 
 
 
-<form method="post" action="addDrug">
+<form method="post" action="">
     <table align="center">
         <tr>
             <td style="float: right;"><font color="red">*</font>药品名:</td>
